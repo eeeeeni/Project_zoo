@@ -16,7 +16,7 @@ function App() {
 
   const cardRef = useRef(null); // 🔸 카드 영역 참조
 
-  const animals = ['강아지', '고양이', '토끼', '햄스터', '여우', '사자', '사슴', '호랑이', '팬더', '코끼리'];
+  const animals = ['강아지', '고양이', '토끼', '햄스터', '여우', '사자', '사슴', '호랑이', '팬더', '코끼리', '카피바라'];
   const moods = ['행복해요', '슬퍼요', '화나요', '긴장돼요', '불안해요', '지쳤어요', '설레요', '우울해요', '신나요', '무기력해요'];
   const tone = ['상냥하게', '재미있게', '진지하게', '귀엽게', '차분하게', '감성적으로'];
   const colors = ['빨간색', '파란색', '노란색', '초록색', '보라색', '주황색', '핑크색', '검은색', '민트색', '회색'];
@@ -77,7 +77,7 @@ if (result) {
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <div ref={cardRef} style={{
           padding: '20px', border: '1px solid #ccc', borderRadius: '16px',
-          backgroundColor: '#fff', width: '90%', maxWidth: '500px',
+          backgroundColor: '#fff', width: '90%', maxWidth: '400px',
           boxShadow: '0 4px 20px rgba(0,0,0,0.1)', textAlign: 'center'
         }}>
           <h2 style={{ fontSize: '1.7rem' }}>✨ {formData.animal}의 응원 메시지 ✨</h2>
@@ -115,12 +115,12 @@ if (result) {
           marginTop: '10px',
           display: 'flex',
           justifyContent: 'center',
-          gap: '2rem'
+          gap: '1rem'
         }}>
           <button
             onClick={handleDownload}
             style={{
-              padding: '0.7rem 2.5rem',
+              padding: '0.7rem 2rem',
               backgroundColor: '#ffffff',
               border: '1px solid #ccc',
               borderRadius: '8px',
@@ -154,11 +154,11 @@ if (result) {
     <div style={{ width: '100vw', minHeight: '100vh', backgroundColor: '#fffaf0', padding: '2rem 0', display: 'flex', justifyContent: 'center' }}>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
         <h1 style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>🐾 응원 동물원</h1>
-        <p style={{ marginBottom: '1.2rem', color: '#555' }}>당신의 하루를 응원하는 귀여운 친구들 🐶🐱🦊</p>
+        <p style={{ marginBottom: '1.2rem', color: '#555' }}>당신의 하루를 응원하는 귀여운 친구들 🐶🐱🐰🦊</p>
 
         <form onSubmit={handleSubmit} style={{
-          display: 'flex', flexDirection: 'column', gap: '1.3rem', padding: '50px', border: '1px solid #ddd',
-          borderRadius: '10px', backgroundColor: 'white', width: '100%', maxWidth: '400px',
+          display: 'flex', flexDirection: 'column', gap: '1.3rem', padding: '40px', border: '1px solid #ddd',
+          borderRadius: '10px', backgroundColor: 'white', width: '100%', maxWidth: '350px',
           boxShadow: '0 4px 10px rgba(0,0,0,0.1)'
         }}>
           <label>📝 이름을 입력해주세요.<br />
@@ -192,7 +192,7 @@ if (result) {
             </select>
           </label>
           <button type="submit" disabled={loading} style={{ backgroundColor: '#fff', border: '1px solid #ccc', padding: '0.7rem 1.5rem', borderRadius: '8px', cursor: 'pointer', boxShadow: '0 2px 6px rgba(0,0,0,0.05)' }}>
-            {loading ? '응원 생성 중...' : '응원받기'}
+            {loading ? '응원 생성 중...🤖🦾🧐' : '응원받기'}
           </button>
         </form>
       </div>
