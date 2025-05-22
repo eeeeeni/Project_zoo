@@ -153,7 +153,7 @@ if (result) {
   return (
     <div style={{ width: '100vw', minHeight: '100vh', backgroundColor: '#fffaf0', padding: '2rem 0', display: 'flex', justifyContent: 'center' }}>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
-        <h1 style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>🐾 응원 동물원</h1>
+        <h1 style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>🐾 배포테스트</h1>
         <p style={{ marginBottom: '1.2rem', color: '#555' }}>당신의 하루를 응원하는 귀여운 친구들 🐶🐱🐰🦊</p>
 
         <form onSubmit={handleSubmit} style={{
