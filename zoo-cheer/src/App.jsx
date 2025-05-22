@@ -120,7 +120,7 @@ if (result) {
           <button
             onClick={handleDownload}
             style={{
-              padding: '0.7rem 3rem',
+              padding: '0.7rem 2.5rem',
               backgroundColor: '#ffffff',
               border: '1px solid #ccc',
               borderRadius: '8px',
@@ -134,7 +134,7 @@ if (result) {
           <button
             onClick={handleReset}
             style={{
-              padding: '0.7rem 4rem',
+              padding: '0.7rem 2.5rem',
               backgroundColor: '#ffffff',
               border: '1px solid #ccc',
               borderRadius: '8px',
