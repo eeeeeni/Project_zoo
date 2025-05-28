@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import html2canvas from 'html2canvas';
 import './App.css';
+import { logSelection } from './logSelection';
 
 function App() {
   const [formData, setFormData] = useState({
@@ -32,6 +33,9 @@ function App() {
     setResult(null);
 
     try {
+      // 사용자 선택값 로깅
+      await logSelection(formData);
+      // 응원 API 호출
       const response = await fetch('https://fpgk21llrl.execute-api.us-east-1.amazonaws.com/dev/cheer', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -153,7 +157,7 @@ if (result) {
   return (
     <div style={{ width: '100vw', minHeight: '100vh', backgroundColor: '#fffaf0', padding: '2rem 0', display: 'flex', justifyContent: 'center' }}>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
-        <h1 style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>🐾프리뷰 테스트🐾</h1>
+        <h1 style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>🐾응원동물원🐾</h1>
         <p style={{ marginBottom: '1.2rem', color: '#555' }}>당신의 하루를 응원하는 귀여운 친구들 🐶🐱🐰🦊</p>
 
         <form onSubmit={handleSubmit} style={{
