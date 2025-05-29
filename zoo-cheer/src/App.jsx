@@ -132,7 +132,7 @@ if (result) {
               cursor: 'pointer'
             }}
           >
-            이미지 카드 저장하기
+            응원 카드 저장
           </button>
 
           <button
